@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         let defaultNavigationBarFrame = CGRect(x: 0, y: 0, width: self.view.frame.size.width , height: 64)
         let gradialLayer = RadialGradientLayer1()
         gradialLayer.frame = defaultNavigationBarFrame
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 57/255, green: 3/255, blue: 1/255, alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = UIColor.black
         
         
         self.navigationController?.navigationBar.isTranslucent = false
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
             return (bounds.height * 1.7)
         }
 
-        var colors: [UIColor] = [UIColor(red: 167/255, green: 6/255, blue: 6/255, alpha: 1),UIColor(red: 57/255, green: 3/255, blue: 1/255, alpha: 1)] {
+        var colors: [UIColor] = [UIColor.lightGray,UIColor.black] {
             didSet {
                 setNeedsDisplay()
             }

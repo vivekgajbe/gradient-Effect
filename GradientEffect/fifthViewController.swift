@@ -46,7 +46,7 @@ class RadialGradientLayer2: CALayer {
         super.init(layer: layer)
     }
     
-    public var colors = [UIColor(red: 167/255, green: 6/255, blue: 6/255, alpha: 1).cgColor,UIColor(red: 35/255, green: 0/255, blue: 1/255, alpha: 1).cgColor] //[UIColor.red.cgColor, UIColor.blue.cgColor]
+    public var colors = [UIColor.gray.cgColor,UIColor.black.cgColor] //[UIColor.red.cgColor, UIColor.blue.cgColor]
     
     override func draw(in ctx: CGContext) {
         ctx.saveGState()

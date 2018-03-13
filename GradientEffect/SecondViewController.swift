@@ -117,8 +117,8 @@ class RadialGradientLayer: CALayer {
     var radius: CGFloat {
         return (bounds.height)/1.7
     }
-    //[UIColor(red: 167/255, green: 6/255, blue: 6/255, alpha: 1),UIColor(red: 35/255, green: 0/255, blue: 0/255, alpha: 1) ]
-    var colors: [UIColor] = [UIColor(red: 167/255, green: 6/255, blue: 6/255, alpha: 1),UIColor(red: 57/255, green: 3/255, blue: 1/255, alpha: 1)] {
+
+    var colors: [UIColor] = [UIColor.gray,UIColor.black] {
         didSet {
             setNeedsDisplay()
         }
