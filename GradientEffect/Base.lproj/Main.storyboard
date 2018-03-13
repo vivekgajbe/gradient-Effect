@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5ze-nK-jxs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Third View Controller-->
+        <scene sceneID="6lM-G1-d0A">
+            <objects>
+                <viewController id="MYg-AL-JAg" customClass="ThirdViewController" customModule="GradientEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sHk-0A-Yl4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdG-pZ-nOS" customClass="GradientView" customModule="GradientEffect" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JdG-pZ-nOS" firstAttribute="trailing" secondItem="meh-tV-Krh" secondAttribute="trailing" id="8AS-dU-0Wg"/>
+                            <constraint firstItem="JdG-pZ-nOS" firstAttribute="top" secondItem="sHk-0A-Yl4" secondAttribute="top" id="DxJ-Ym-ngj"/>
+                            <constraint firstItem="JdG-pZ-nOS" firstAttribute="bottom" secondItem="meh-tV-Krh" secondAttribute="bottom" id="GIj-tU-JeK"/>
+                            <constraint firstItem="JdG-pZ-nOS" firstAttribute="leading" secondItem="meh-tV-Krh" secondAttribute="leading" id="RIu-ih-EZ9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="meh-tV-Krh"/>
+                    </view>
+                    <connections>
+                        <outlet property="viwGradient" destination="JdG-pZ-nOS" id="7OU-gP-CPm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akK-xN-68y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="-581"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="GradientEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gradient Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHs-7p-yci">
+                                <rect key="frame" x="87.5" y="355" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="SaF-Df-m9A"/>
+                                    <constraint firstAttribute="width" constant="200" id="gbz-Zb-Ykk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xHs-7p-yci" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NiY-I9-gvu"/>
+                            <constraint firstItem="xHs-7p-yci" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="qdV-Ir-jB1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vsj-6x-oxU">
+                        <barButtonItem key="leftBarButtonItem" title="fifth" id="9zM-yj-d6B">
+                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="xAt-z3-W1o" kind="show" id="BFw-5o-JAz"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Second" id="OF2-UH-CBw">
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="WHc-Uu-Iqk" kind="show" id="sug-Hx-RT0"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Third" id="mS6-QY-1UY">
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="MYg-AL-JAg" kind="show" id="ngY-t3-fFY"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Forth" id="zvy-sI-es6">
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="Xwk-GC-Mcs" kind="show" id="JbU-Cq-lpi"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799" y="123"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="msR-Fb-wc0">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="WHc-Uu-Iqk" customClass="SecondViewController" customModule="GradientEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bgA-aZ-FON">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pu0-b7-OVd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMX-ij-Yq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="123"/>
+        </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="p4O-Ck-IBX">
+            <objects>
+                <viewController storyboardIdentifier="fifthViewController" id="xAt-z3-W1o" customClass="fifthViewController" customModule="GradientEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5YG-ZU-2Bc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="M3e-m7-gUx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ff-S8-OOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757" y="806"/>
+        </scene>
+        <!--Forth View Controller-->
+        <scene sceneID="ivf-Yl-X8Y">
+            <objects>
+                <viewController storyboardIdentifier="forthViewController" id="Xwk-GC-Mcs" customClass="forthViewController" customModule="GradientEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sEC-rV-uN6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="w5d-Ds-Lfy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Clc-zh-kls" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="795"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tsy-Vp-9c3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5ze-nK-jxs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dMG-P4-Pc6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wqp-S8-BCh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOe-WF-09k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="131"/>
+        </scene>
+    </scenes>
+</document>
